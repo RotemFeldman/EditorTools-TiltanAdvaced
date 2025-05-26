@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/_Main/ScenesTools/Editor/QuickScenePlay/QuickScenePlayEditorWindow.uss?fileID=7433441132597879392&amp;guid=a96bf79f270eda54fad696e476655981&amp;type=3#QuickScenePlayEditorWindow" />
+    <engine:TextField placeholder-text="Scene Name" enabled="true" name="SearchField" style="margin-top: 4px; margin-left: 6px;" />
+    <engine:Label text="Select Starting Scene:" name="Title" style="white-space: pre; margin-top: 4px; margin-bottom: 2px; -unity-font-style: bold; font-size: 14px;" />
+    <engine:ScrollView name="ScrollView" style="background-color: rgb(42, 42, 42); bottom: auto; flex-grow: 1; top: 0; flex-shrink: 1; margin-top: 4px; margin-bottom: 4px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgba(30, 30, 30, 0.82); border-right-color: rgba(30, 30, 30, 0.82); border-top-color: rgba(30, 30, 30, 0.82); border-bottom-color: rgba(30, 30, 30, 0.82); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px;" />
+    <engine:VisualElement style="flex-grow: 0; flex-direction: row;">
+        <engine:Toggle label="Enabled" name="Toggle" style="flex-direction: row-reverse;" />
+        <engine:VisualElement style="flex-grow: 1;" />
+        <engine:Button text="Close" name="CloseBtn" emoji-fallback-support="false" style="align-self: flex-end;" />
+    </engine:VisualElement>
+</engine:UXML>
