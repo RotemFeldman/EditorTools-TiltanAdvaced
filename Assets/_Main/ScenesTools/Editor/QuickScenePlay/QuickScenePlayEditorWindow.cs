@@ -11,7 +11,7 @@ namespace UnityUtils.ScenesPlus
     {
         [SerializeField] private VisualTreeAsset m_VisualTree;
         
-        [MenuItem("Utility/Rotem's Tools/Quick Scene Play Settings #&p")]
+        [MenuItem("Project/Quick Scene Play Settings #&p")]
         public static void OpenWindow()
         {
             QuickScenePlayEditorWindow wnd = GetWindow<QuickScenePlayEditorWindow>();
