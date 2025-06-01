@@ -19,6 +19,7 @@ public class PreBuildProcess: IPreprocessBuildWithReport
 
         if (!sceneExist)
         {
+            EditorUtility.DisplayDialog("Error", "Seems you forgot something... the main menu scene not found", "Roger!");
             throw new BuildFailedException("Scene not found in build settings " + requieredScene);
         }
     }
