@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+[CustomEditor(typeof(ItemsData))]
 public class ItemDataEditor : Editor
 {
     SerializedProperty itemIcon;
@@ -19,7 +20,6 @@ public class ItemDataEditor : Editor
         serializedObject.Update();
         GUILayout.Label("Item Data Editor", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(itemIcon);
-        EditorGUILayout.PropertyField(itemRarity);
         
         Color defaultColor = GUI.color;
         GUI.color = GetRarityColor((ItemRarity)itemRarity.enumValueIndex);
@@ -43,6 +43,7 @@ public class ItemDataEditor : Editor
             GUILayout.Box(itemIconTexture2D, boxStyle, GUILayout.Width(256), GUILayout.Height(256));
             GUI.backgroundColor = Color.white;
         }
+        
         
     }
 
