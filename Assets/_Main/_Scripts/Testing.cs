@@ -4,7 +4,7 @@ using UnityUtils.Attributes;
 
 public class Testing : MonoBehaviour
 {
-    [Required("123")]
+    [Required("Gameobject is required")]
     public GameObject go;
 
 }
